@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Roboto:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Products</title>
+</head>
+<body>
+    <div class="header-products">
+        <nav>
+            <div>
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false"></span></button>
+                <ul class="flex primary-navigation" data-visible="false">
+                    <li><span><img src="img/logo.png" alt="CARIMAKAN-Logo" style="object-fit: fill; width: 15rem;"></span></li>
+                    <div class="flex navigation-list ff-roboto fs-400 ls-small fw300 underline-indicator">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="#">Products</a></li>
+                        <li><a href="order.html">Order</a></li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <div class="container" style="width: 100%;">
+            <h3 class="ff-garamond fs-600">Our Products</h3>
+            <p class="ff-roboto fs400">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumStet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.dolore magna aliquyam erat, sed diam voluptua.</p>
+        </div>
+        <div class="container product-btn-wrapper flex">
+            <button class="button product_btn product_btn-clicked ff-roboto fs-300" data-filter="all">All Products</button>
+            <button class="button product_btn ff-roboto fs-300" data-filter="maindish">Main Dish</button>
+            <button class="button product_btn ff-roboto fs-300" data-filter="snacks">Snacks</button>
+        </div>
+    </div>
+    <div class="container margin-top grid product-wrapper">
+        <div class="product-card" data-item = "maindish">
+            <img src="img/opor-ayam.jpg" class="product-img" alt="">
+            <div class="flex product-title-time">
+                <h4 class="ff-roboto fs-400 fw300 ls-small">Opor Ayam</h4>
+                <span class="info-time flex">
+                    <span><img src="img/icon/stopwatch.svg" class="stopwatch" alt=""></span>
+                    <span class="ff-roboto" style="font-size: 12px;">60min</span>
+                </span>
+            </div>
+            <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+            <div class="product-card" data-item = "maindish">
+                <img src="img/ayambakar1.jpg" class="product-img" alt="">
+                <div class="flex product-title-time">
+                    <h4 class="ff-roboto fs-400 fw300 ls-small">Ayam Bakar</h4>
+                    <span class="info-time flex">
+                        <span style="font-size: 15px;"><img src="img/icon/stopwatch.svg" class="stopwatch" alt=""></span>
+                        <span class="ff-roboto" style="font-size: 12px;">60min</span>
+                    </span>
+                </div>
+                <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="product-card" data-item = "maindish">
+                <img src="img/rawon.jpg" class="product-img" alt="">
+                <div class="flex product-title-time">
+                    <h4 class="ff-roboto fs-400 fw300 ls-small">Rawon</h4>
+                    <span class="info-time flex">
+                        <span style="font-size: 15px;"><img src="img/icon/stopwatch.svg" class="stopwatch" alt=""></span>
+                        <span class="ff-roboto" style="font-size: 12px;">60min</span>
+                    </span>
+                </div>
+                <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="product-card" data-item = "maindish">
+                <img src="img/lelegor.jpg" class="product-img" alt="">
+                <div class="flex product-title-time">
+                    <h4 class="ff-roboto fs-400 fw300 ls-small">Lele Goreng</h4>
+                    <span class="info-time flex">
+                        <span style="font-size: 15px;"><img src="img/icon/stopwatch.svg" class="stopwatch" alt=""></span>
+                        <span class="ff-roboto" style="font-size: 12px;">60min</span>
+                    </span>
+                </div>
+                <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="product-card" data-item = "maindish">
+                <img src="img/pepesjamur.jpg" class="product-img" alt="">
+                <div class="flex product-title-time">
+                    <h4 class="ff-roboto fs-400 fw300 ls-small">Pepes Jamur</h4>
+                    <span class="info-time flex">
+                        <span style="font-size: 15px;"><img src="img/icon/stopwatch.svg" class="stopwatch" alt=""></span>
+                        <span class="ff-roboto" style="font-size: 12px;">60min</span>
+                    </span>
+                </div>
+                <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="product-card" data-item = "maindish">
+                <img src="img/ketoprak12.png" class="product-img" alt="">
+                <div class="flex product-title-time">
+                    <h4 class="ff-roboto fs-400 fw300 ls-small">Ketoprak</h4>
+                    <span class="info-time flex">
+                        <span style="font-size: 15px;"><img src="img/icon/stopwatch.svg" class="stopwatch" alt=""></span>
+                        <span class="ff-roboto" style="font-size: 12px;">60min</span>
+                    </span>
+                </div>
+                <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="product-card" data-item = "maindish">
+                <img src="img/tumpengmini.jpg" class="product-img" alt="">
+                <div class="flex product-title-time">
+                    <h4 class="ff-roboto fs-400 fw300 ls-small">Nasi Tumpeng</h4>
+                    <span class="info-time flex">
+                        <span style="font-size: 15px;"><img src="img/icon/stopwatch.svg" class="stopwatch" alt=""></span>
+                        <span class="ff-roboto" style="font-size: 12px;">60min</span>
+                    </span>
+                </div>
+                <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="product-card" data-item = "maindish">
+                <img src="img/sopbuntut.jpg" class="product-img" alt="">
+                <div class="flex product-title-time">
+                    <h4 class="ff-roboto fs-400 fw300 ls-small">Sop Buntut</h4>
+                    <span class="info-time flex">
+                        <span style="font-size: 15px;"><img src="img/icon/stopwatch.svg" class="stopwatch" alt=""></span>
+                        <span class="ff-roboto" style="font-size: 12px;">60min</span>
+                    </span>
+                </div>
+                <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="product-card" data-item = "snacks">
+                <img src="img/cireng.jpg" class="product-img" alt="">
+                <div class="flex product-title-time">
+                    <h4 class="ff-roboto fs-400 fw300 ls-small">Cireng</h4>
+                    <span class="info-time flex">
+                        <span style="font-size: 15px;"><img src="img/icon/stopwatch.svg" class="stopwatch" alt=""></span>
+                        <span class="ff-roboto" style="font-size: 12px;">60min</span>
+                    </span>
+                </div>
+                <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="product-card" data-item = "snacks">
+                <img src="img/pempek1.jpg" class="product-img" alt="">
+                <div class="flex product-title-time">
+                    <h4 class="ff-roboto fs-400 fw300 ls-small">Pempek</h4>
+                    <span class="info-time flex">
+                        <span style="font-size: 15px;"><img src="img/icon/stopwatch.svg" class="stopwatch" alt=""></span>
+                        <span class="ff-roboto" style="font-size: 12px;">60min</span>
+                    </span>
+                </div>
+                <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="product-card" data-item = "snacks">
+                <img src="img/pukis.jpg" class="product-img" alt="">
+                <div class="flex product-title-time">
+                    <h4 class="ff-roboto fs-400 fw300 ls-small">Pukis</h4>
+                    <span class="info-time flex">
+                        <span style="font-size: 15px;"><img src="img/icon/stopwatch.svg" class="stopwatch" alt=""></span>
+                        <span class="ff-roboto" style="font-size: 12px;">60min</span>
+                    </span>
+                </div>
+                <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="product-card" data-item = "snacks">
+                <img src="img/risoles1.jpg" class="product-img" alt="">
+                <div class="flex product-title-time">
+                    <h4 class="ff-roboto fs-400 fw300 ls-small">Risoles</h4>
+                    <span class="info-time flex">
+                        <span style="font-size: 15px;"><img src="img/icon/stopwatch.svg" class="stopwatch" alt=""></span>
+                        <span class="ff-roboto" style="font-size: 12px;">60min</span>
+                    </span>
+                </div>
+                <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+    </div>
+
+    <footer class="margin-top">
+        <div class="container footer-wrapper flow-ver">
+            <h3 class="ff-roboto fs-500 fw300">Get our latest offer</h3>
+            <div class="flex" style="align-items: center; flex-direction: column;">
+                <input type="text" class="full text-center" placeholder="Email ">
+                <button class="button">Subscribe</button>
+            </div>
+            <p>Copyright © CariMakan. All right reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="navigation.js"></script>
+    <script src="products.js"></script>
+</body>
+</html>
