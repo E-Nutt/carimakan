@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Roboto:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>CARIMAKAN</title>
+</head>
+<body>
+    <div id="index-header"> 
+        <header>
+            <nav>
+                <div>
+                    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false"></span></button>
+                    <ul class="flex primary-navigation" data-visible="false">
+                        <li><span><img src="img/logo.png" alt="CARIMAKAN-Logo" style="object-fit: fill; width: 15rem;"></span></li>
+                        <div class="flex navigation-list ff-roboto fs-400 ls-small fw300 underline-indicator">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="Products.html">Products</a></li>
+                            <li><a href="order.html">Order</a></li>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container title-landing-page">
+                <p class="ff-garamond fs-600 fw400">The Best authentic Food</p>
+                <p class="ff-garamond fs-600 fw400">Provided with the best ingredients</p>
+            </div>
+        </header>
+    </div>
+        <div class="container best-seller-title margin-top">
+            <h1 class="ff-roboto fs-600 fw200 ls-small" id="best-seller-title">BEST SELLER</h1>
+        </div>
+        <div class="flex container best-seller-wrapper margin-top margin-bottom">
+            <div class="image-wrapper flex margin-top" style="justify-content: center;">
+                <div class="best-seller-image" id="best-seller1"></div>
+            </div>
+            <div class="flow-ver margin-top margin-bottom">
+                <div class="flex button-wrapper margin">
+                    <a class="" onclick="previousMenu()">
+                        <img class="button-icon" src="img/icon/arrow_left.png" alt="arrow icon left">
+                    </a>
+                    <a class="" onclick="nextMenu()">
+                        <img class="button-icon" src="img/icon/arrow_right.png" alt=" arrow icon right">
+                    </a>
+                </div>
+                <div class="flow-ver container">
+                    <h1 class="menu_title fs-700 fw400 ff-garamond" id="menu_title"></h1>
+                    <div style="height: max-content;"> 
+                    <p class="menu_desc fs-400 fw300 ff-roboto" id="menu_desc"></p>
+                    </div>
+                    <div class="flex qty-price">
+                        <h5 class="menu_portion ff-roboto fs-400 fw300">1 Portion</h5>
+                        <h5 class="menu_price ff-roboto fs-400 fw300" id="menu_price"></h5> 
+                    </div>
+                    <button class="button order-button fs-400 ff-roboto fw300" style="margin-bottom: 4rem;">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container margin-top">
+            <div class="container howto-title margin-top">
+                <h1 class="ff-roboto fs-600 fw200 ls-small" id="best-seller-title">HOW IT WORKS</h1>
+            </div>
+            <div class="flex how-wrapper margin-top ">
+                <div class="container flow-ver margin-bottom">
+                    <img src="img/icon3.1.png" alt=" ">
+                    <h4 class="ff-garamond fs-500 fw200">Choose Menu</h4>
+                    <p class="ff-roboto fs-400 fw300">order your dish online with a minimum of three portion and and andad</p>
+                </div>
+                <div class="container flow-ver margin-bottom">
+                    <img src="img/icon3.2.png" alt=" " style="max-height: 34.5rem;">
+                    <h4 class="ff-garamond fs-500 fw200">Safe Delivery</h4>
+                    <p class="ff-roboto fs-400 fw300">Sending your goods safely and healthy</p>
+                </div>
+                <div class="container flow-ver margin-bottom">
+                    <img src="img/icon3.3.png" alt=" ">
+                    <h4 class="ff-garamond fs-500 fw200">Ingredients Arrived</h4>
+                    <p class="ff-roboto fs-400 fw300">your ingredients is placed at your recommeded place</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container margin-top flex testimonial-wrapper flow-ver margin-bottom">
+            <h1 class="ff-roboto fs-600 fw200 ls-small" id="best-seller-title">Their Testimonial</h1>
+            <div class="flex testimonial-img">
+                <img src="img/user1.jpg" onclick="changeTesti(0)"  class="testi-img selected-img" alt="">
+                <img src="img/user2.jpg"  onclick="changeTesti(1)" class="testi-img"  alt="">
+                <img src="img/user3.jpeg" onclick="changeTesti(2)" class="testi-img"   alt="">
+                <img src="img/user4.jpg"  onclick="changeTesti(3)" class="testi-img"  alt="">
+            </div>
+            <h4 class="ff-garamond fs-500 fw200" style="text-align: center;" id="testimonial-name">Emy / Developer</h4>
+            <p class=" fs-400 fw300 ff-roboto" id="testimonial-text" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur et adipisci ut, impedit cumque, similique, eum tenetur, numquam eligendi aliquid. Nulla sit, cupiditate corporis labore, modi natus officiis asperiores!</p>
+        </div>
+
+        <footer class="margin-top">
+            <div class="container footer-wrapper flow-ver">
+                <h3 class="ff-roboto fs-500 fw300">Get our latest offer</h3>
+                <div class="flex" style="align-items: center; flex-direction: column;">
+                    <input type="text" class="full text-center" placeholder="Email ">
+                    <button class="button">Subscribe</button>
+                </div>
+                <p>Copyright © CariMakan. All right reserved.</p>
+            </div>
+        </footer>
+    <script src="index.js"></script>
+    <script src="navigation.js"></script>
+</body>
+</html>
